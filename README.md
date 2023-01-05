@@ -1,6 +1,3 @@
-# github-practice
-Git이 익숙하지 않다면 연습해봅시다!
-
 ## Repository clone & commit 하기
 
 ```bash
@@ -59,23 +56,6 @@ git checkout -b "branchName"
     - -b 명령어를 넣어주어 원격 브랜치의 내용을 가져올 로컬 브랜치의 이름을 원하는대로 바꿔줄 수도 있음
 - 참고 자료 [https://velog.io/@juno7803/git-원격-브랜치-가져오기remote-branch](https://velog.io/@juno7803/git-%EC%9B%90%EA%B2%A9-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0remote-branch)
 
-## Gitlab에서 Github로 저장소 옮기기 (미러링)
-
-1. gitlab 레포지토리 클론
-    
-    ```java
-    git clone `gitlab repo 주소`
-    ```
-    
-2. github 저장소 만들기
-3. 새로 만든 깃허브 저장소에 미러링하기
-    
-    ```java
-    git push --mirror `새로 만든 깃허브 저장소 주소`
-    ```
-    
-- 참고 자료 [https://sooya14.tistory.com/entry/Gitlab-에서-Github-으로-저장소-옮기기-미러링](https://sooya14.tistory.com/entry/Gitlab-%EC%97%90%EC%84%9C-Github-%EC%9C%BC%EB%A1%9C-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%98%AE%EA%B8%B0%EA%B8%B0-%EB%AF%B8%EB%9F%AC%EB%A7%81)
-
 ## 원격 브랜치 삭제하기
 
 1. 원격 브랜치 업데이트
@@ -100,19 +80,6 @@ git checkout -b "branchName"
     ```
     
 - 참고 자료 [https://www.lesstif.com/gitbook/git-delete-remote-branch-20776547.html](https://www.lesstif.com/gitbook/git-delete-remote-branch-20776547.html)
-
-## .gitignore가 작동하지 않은 경우
-
-- git의 캐시 문제로 인해 발생
-- 다음과 같은 명령어로 캐시 내용을 삭제 후 commit push 수행
-
-```java
-git rm -r --cached .
-git add .
-git commit -m "fixed untracked files"
-```
-
-- 참고 자료 [https://jojoldu.tistory.com/307](https://jojoldu.tistory.com/307)
 
 ## 이미 commit한 메시지 수정하기
 
